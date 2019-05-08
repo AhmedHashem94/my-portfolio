@@ -25,6 +25,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
+    <link rel="stylesheet" href="css/hamburgers.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -47,15 +48,15 @@
       <nav class="main-nav navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
           <button
-            class="navbar-toggler d-lg-none"
+            class="navbar-toggler d-lg-none hamburger hamburger--collapse"
             type="button"
             data-toggle="collapse"
             data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -329,6 +330,7 @@
                   type="button"
                   data-filter="all"
                   class="btn main-button1"
+                  data-mixitup-control
                 >
                   All
                 </button>
@@ -338,6 +340,7 @@
                   type="button"
                   data-filter=".html-css"
                   class="btn main-button1"
+                  data-mixitup-control
                 >
                   HTML&CSS
                 </button>
@@ -347,6 +350,7 @@
                   type="button"
                   data-filter=".bootstrap"
                   class="btn main-button1"
+                  data-mixitup-control
                 >
                   Bootstrap
                 </button>
@@ -356,6 +360,7 @@
                   type="button"
                   data-filter=".javaScript"
                   class="btn main-button1"
+                  data-mixitup-control
                 >
                   javaScript
                 </button>
@@ -365,6 +370,7 @@
                   type="button"
                   data-filter=".Ajax"
                   class="btn main-button1"
+                  data-mixitup-control
                 >
                   Ajax
                 </button>
@@ -373,7 +379,9 @@
           </div>
           <div class="sorting-container py-5">
             <div class="row">
-              <div class="col-md-6 col-xl-4 col-lg-6 mix html-css wow fadeInUp">
+              <div
+                class="col-md-6 col-xl-4 col-lg-6 mix html-css wow slideInUp"
+              >
                 <div class="box">
                   <div class="box-img img-engaged">
                     <div class="overlay"></div>
@@ -397,7 +405,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix bootstrap wow fadeInUp"
+                class="col-md-6 col-xl-4 col-lg-6 mix bootstrap wow slideInUp"
                 style="animation-delay:.2s;"
               >
                 <div class="box">
@@ -423,7 +431,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix javaScript html-css wow fadeInUp"
+                class="col-md-6 col-xl-4 col-lg-6 mix javaScript html-css wow slideInUp"
                 style="animation-delay:.4s;"
               >
                 <div class="box">
@@ -449,7 +457,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap wow fadeInUp"
+                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap wow slideInUp"
                 style="animation-delay:.6s;"
               >
                 <div class="box">
@@ -475,7 +483,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix html-css javaScript bootstrap wow fadeInUp"
+                class="col-md-6 col-xl-4 col-lg-6 mix html-css javaScript bootstrap wow slideInUp"
                 style="animation-delay:.8s;"
               >
                 <div class="box">
@@ -501,7 +509,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap wow fadeInUp"
+                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap wow slideInUp"
                 style="animation-delay:1s;"
               >
                 <div class="box">
@@ -527,8 +535,8 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap Ajax wow fadeInUp"
-                style="animation-delay:1.2s;"
+                class="col-md-6 col-xl-4 col-lg-6 mix javaScript bootstrap Ajax wow slideInUp"
+                style="animation-delay:1s;"
               >
                 <div class="box">
                   <div class="box-img img-newsapi">
@@ -577,7 +585,12 @@
             Have a question or want to work together?
           </p>
           <div class="col-md-6 offset-md-3">
-            <form class="pb-5 wow bounceIn" id="myForm" novalidate>
+            <form
+              class="pb-5 wow bounceIn"
+              style="animation-delay:.5s"
+              id="myForm"
+              novalidate
+            >
               <div class="form-group">
                 <input
                   onfocusout="validateName();"
