@@ -113,7 +113,9 @@
   }
 
   window.onload = function(e) {
-    init();
+    if (window.innerWidth > 1023) {
+      init();
+    }
   };
 
   window.onresize = function(event) {
