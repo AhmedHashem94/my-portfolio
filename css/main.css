@@ -100,6 +100,10 @@ html {
   background-color: #212432;
   color: #faed26;
 }
+.mixitup-control-active {
+  background-color: #212432;
+  color: #faed26;
+}
 .divider {
   width: 70px;
   background: #212432;
@@ -340,6 +344,12 @@ header .main-nav ul li.active a {
 }
 .portfolio .box .img-forkify {
   background: no-repeat 100%/100% url(../imgs/forkify.png);
+}
+.portfolio .box .img-hail {
+  background: no-repeat 100%/100% url(../imgs/hail-cement.png);
+}
+.portfolio .box .img-medicall {
+  background: no-repeat 100%/100% url(../imgs/mcall.png);
 }
 .ss-style-doublediagonal {
   position: relative;
