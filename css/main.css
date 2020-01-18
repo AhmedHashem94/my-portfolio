@@ -321,6 +321,9 @@ header .main-nav ul li.active a {
 .portfolio .box .img-engaged {
   background: no-repeat 100%/100% url(../imgs/Engage-Business-2.png);
 }
+.portfolio .box .img-mada {
+  background: no-repeat 100%/100% url(../imgs/mada.png);
+}
 .portfolio .box .img-fokir {
   background: no-repeat 100%/100% url(../imgs/fokir.png);
 }
